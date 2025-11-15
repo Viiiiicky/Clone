@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porsche首頁仿作</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <button class="nav-button menu-button">
+          <img class="menu-icon" src="./src/images/menu.png" alt="menu" /><span
+            class="menu-span-text"
+            >選單</span
+          >
+        </button>
+      </div>
+      <div
+        class="nav-brand fw-600 tooltip"
+        aria-describedby="tooltip-porsche-text"
+      >
+        PORSCHE<span
+          id="tooltip-porsche-text"
+          class="tooltiptext"
+          role="tooltip"
+          >Porsche.com</span
+        >
+      </div>
+      <div>
+        <button
+          class="nav-button tooltip login-button"
+          aria-describedby="tooltip-login-text"
+        >
+          <img class="user-icon" src="./src/images/user.png" alt="user icon" />
+          <span id="tooltip-login-text" class="tooltiptext" role="tooltip"
+            >登入</span
+          >
+        </button>
+      </div>
+      <div data-visible="false" class="side-menu">
+        <div class="sidemenu-wrapper" id="sidemenu-wrapper">
+          <div class="sidemenu-options-wrapper">
+            <ul>
+              <li class="sidemenu-option option-models">
+                <a href="#"
+                  ><span>車型系列</span
+                  ><img src="./src/images/chevron.png" alt="chevron"
+                /></a>
+              </li>
+              <li class="sidemenu-option option-order">
+                <a href="#"
+                  ><span>諮詢與購買</span
+                  ><img src="./src/images/chevron.png" alt="chevron"
+                /></a>
+              </li>
+              <li class="sidemenu-option option-service">
+                <a href="#"
+                  ><span>服務</span
+                  ><img src="./src/images/chevron.png" alt="chevron"
+                /></a>
+              </li>
+              <li class="sidemenu-option option-discover">
+                <a href="#"
+                  ><span>發現更多</span
+                  ><img src="./src/images/chevron.png" alt="chevron"
+                /></a>
+              </li>
+              <li class="sidemenu-option option-dealer">
+                <a href="#"
+                  ><span>尋找經銷商</span
+                  ><img src="./src/images/chevron.png" alt="chevron"
+                /></a>
+              </li>
+              <li class="sidemenu-option option-login">
+                <a href="#"
+                  ><span class="login-span"
+                    ><img
+                      src="./src/images/user-dark.png"
+                      alt="user icon"
+                    />登入</span
+                  ><img src="./src/images/chevron.png" alt="chevron"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidemenu-content-wrapper">
+            <span class="content-wrapper-nav">
+              <span class="content-wrapper-title"></span>
+              <button class="back-button">
+                <img src="./src/images/arrow-dark-flip.png" alt="back" />
+              </button>
+            </span>
+            <div class="sidemenu-content-models">
+              <a href="#">
+                <div class="content-wrapper">
+                  <p class="sidemenu-model-name fw-600">718</p>
+                  <img
+                    class="sidemenu-model-img"
+                    src="./src/images/718@2x.webp"
+                    alt="718"
+                  />
+                  <p class="sidemenu-model-tag"><span>Gasoline</span></p>
+                </div></a
+              >
+              <a href="#">
+                <div class="content-wrapper">
+                  <p class="sidemenu-model-name fw-600">911</p>
+                  <img
+                    class="sidemenu-model-img"
+                    src="./src/images/911@2x.webp"
+                    alt="911"
+                  />
+                  <p class="sidemenu-model-tag"><span>Gasoline</span></p>
+                </div></a
+              >
+              <a href="#">
+                <div class="content-wrapper">
+                  <p class="sidemenu-model-name fw-600">Taycan</p>
+                  <img
+                    class="sidemenu-model-img"
+                    src="./src/images/taycan@2x.webp"
+                    alt="Taycan"
+                  />
+                  <p class="sidemenu-model-tag"><span>Electro</span></p>
+                </div></a
+              >
+              <a href="#">
+                <div class="content-wrapper">
+                  <p class="sidemenu-model-name fw-600">Panamera</p>
+                  <img
+                    class="sidemenu-model-img"
+                    src="./src/images/panamera@2x.webp"
+                    alt="Panamera"
+                  />
+                  <p class="sidemenu-model-tag">
+                    <span>Hybrid</span><span>Gasoline</span>
+                  </p>
+                </div></a
+              >
+              <a href="#">
+                <div class="content-wrapper">
+                  <p class="sidemenu-model-name fw-600">Macan</p>
+                  <img
+                    class="sidemenu-model-img"
+                    src="./src/images/macan@2x.webp"
+                    alt="Macan"
+                  />
+                  <p class="sidemenu-model-tag">
+                    <span>Electro</span><span>Gasoline</span>
+                  </p>
+                </div></a
+              >
+              <a href="#">
+                <div class="content-wrapper">
+                  <p class="sidemenu-model-name fw-600">Cayenne</p>
+                  <img
+                    class="sidemenu-model-img"
+                    src="./src/images/cayenne@2x.webp"
+                    alt="Cayenne"
+                  />
+                  <p class="sidemenu-model-tag">
+                    <span>Hybrid</span><span>Gasoline</span>
+                  </p>
+                </div></a
+              >
+            </div>
+            <div class="sidemenu-content-order">
+              <ul class="content-list">
+                <li class="list-item"><a href="#">打造您的座駕</a></li>
+                <li class="list-item"><a href="#">保時捷車型比較</a></li>
+                <li class="list-item"><a href="#">保時捷新車和中古車</a></li>
+                <li class="list-item"><a href="#">保時捷財務方案</a></li>
+                <li class="list-item"><a href="#">保時捷 E-Performance</a></li>
+              </ul>
+            </div>
+            <div class="sidemenu-content-service">
+              <ul class="content-list">
+                <li class="list-item"><a href="#">保時捷服務和保養</a></li>
+                <li class="list-item"><a href="#">保時捷原廠配件</a></li>
+                <li class="list-item"><a href="#">保時捷個人化選配</a></li>
+                <li class="list-item"><a href="#">保時捷經典車</a></li>
+                <li class="list-item"><a href="#">保時捷認證</a></li>
+                <li class="list-item"><a href="#">保時捷精品</a></li>
+              </ul>
+            </div>
+            <div class="sidemenu-content-discover">
+              <ul class="content-list">
+                <li class="list-item"><a href="#">保時捷 Motorsports</a></li>
+                <li class="list-item"><a href="#">保時捷體驗</a></li>
+                <li class="list-item"><a href="#">Porsche Communities</a></li>
+                <li class="list-item"><a href="#">保時捷高爾夫</a></li>
+                <li class="list-item">
+                  <a href="#">保時捷雜誌 Christophorus</a>
+                </li>
+                <li class="list-item"><a href="#">造訪保時捷博物館</a></li>
+              </ul>
+            </div>
+            <div class="sidemenu-content-dealer">
+              <form>
+                <label for="region">郵遞區號或城鎮</label>
+                <div class="location-wrapper">
+                  <input id="region" type="text" placeholder="郵遞區號或城鎮" />
+                  <button
+                    class="location-button locate-button"
+                    aria-label="取得我的位置"
+                  >
+                    <img src="./src/images/aim.png" alt="location icon" />
+                  </button>
+                  <button
+                    class="location-button search-button"
+                    aria-label="搜尋"
+                  >
+                    <img src="./src/images/loupe_flip.png" alt="search icon" />
+                  </button>
+                </div>
+                <label>半徑</label>
+                <div id="distance-dropdown" class="distance-dropdown">
+                  <button type="button" class="dropdown-button">
+                    <span class="dropdown-text"></span>
+                    <img src="./src/images/chevron_down.png" alt="chevron" />
+                  </button>
+                  <div id="dropdown-content" class="dropdown-content">
+                    <button type="button">50 km</button>
+                    <button type="button">100 km</button>
+                    <button type="button">200 km</button>
+                  </div>
+                  <input
+                    type="hidden"
+                    name="radius"
+                    id="distance-value"
+                    value="50"
+                  />
+                </div>
+                <button class="search-dealer" type="button">
+                  <span>在地圖上搜尋經銷商</span
+                  ><img src="./src/images/arrow-dark.png" alt="arrow" />
+                </button>
+              </form>
+            </div>
+            <div class="sidemenu-content-login">
+              <div class="button-wrapper">
+                <button>登入</button>
+                <button>了解更多</button>
+              </div>
+              <div class="login-items">
+                <ul class="content-list">
+                  <li class="list-item"><a href="#">My Porsche應用程式</a></li>
+                  <li class="list-item"><a href="#">訊息</a></li>
+                  <li class="list-item"><a href="#">已保存的搜尋項目</a></li>
+                  <li class="list-item"><a href="#">收藏車輛</a></li>
+                  <li class="list-item"><a href="#">尋找互聯系統服務</a></li>
+                  <li class="list-item"><a href="#">預定和訂單</a></li>
+                  <li class="list-item"><a href="#">個人設定</a></li>
+                  <li class="list-item"><a href="#">隱私</a></li>
+                  <li class="list-item"><a href="#">聯絡與協助</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="close-button">
+          <img
+            class="close-img-light"
+            src="./src/images/close.png"
+            alt="close tab button"
+          />
+          <img
+            class="close-img-dark"
+            src="./src/images/close_dark.png"
+            alt="close tab button"
+          />
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="fadeInUp-animation">全新 911 TURBO S</h1>
+          <button class="fw-500 fadeInUp-animation more-info">了解更多</button>
+          <button class="fw-500 fadeInUp-animation control isPlaying">
+            <img class="pause-icon" src="./src/images/pause.png" alt="pause" />
+            <img class="play-icon" src="./src/images/play.png" alt="play" />
+          </button>
+        </div>
+        <video class="hero-video" autoplay muted loop>
+          <source src="/src/video/911-turbo-s.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section class="new-release">
+        <div class="new-release-cards-wrapper">
+          <div class="card">
+            <a href="#">
+              <img
+                class="scale-img"
+                src="./src/images/911-gts.webp"
+                alt="911 Targa 4 GTS"
+              />
+              <div class="new-release-content content-info fw-600">
+                <span class="card-model-name">911 Targa 4 GTS</span>
+
+                <img
+                  class="arrow-img"
+                  src="./src/images/arrow.png"
+                  alt="arrow"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#"
+              ><img
+                class="scale-img"
+                src="./src/images/cayenne-coupe.webp"
+                alt="Cayenne E-Hybrid Coupe" />
+              <div class="new-release-content content-info fw-600">
+                <span class="card-model-name">Cayenne E-Hybrid Coupe</span>
+
+                <img
+                  class="arrow-img"
+                  src="./src/images/arrow.png"
+                  alt="arrow"
+                /></div
+            ></a>
+          </div>
+          <div class="card">
+            <a href="#">
+              <img
+                class="scale-img"
+                src="./src/images/taycan-gts.webp"
+                alt="Taycan GTS" />
+              <div class="new-release-content content-info fw-600">
+                <span class="card-model-name">Taycan GTS</span>
+
+                <img
+                  class="arrow-img"
+                  src="./src/images/arrow.png"
+                  alt="arrow"
+                /></div
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="all-series">
+        <h2 class="all-series-title fw-500">您的保時捷之旅從現在開始</h2>
+        <div class="all-series-wrapper">
+          <div class="all-series-card">
+            <a href="#">
+              <img class="img-fit" src="./src/images/911.jpg" alt="911" />
+              <video muted loop class="hover-video">
+                <source src="./src/video/911-turbo-s.mp4" type="video/mp4" />
+              </video>
+              <p class="all-series-model-name fw-600">911</p>
+              <div class="all-series-model-info">
+                <div>
+                  <p class="model-tag">
+                    <span class="tag-text">Gasoline</span>
+                  </p>
+                  <p class="model">經典雙門後置引擎跑車</p>
+                </div>
+                <div class="explore-wrapper">
+                  <span class="explore-text">探索</span
+                  ><img
+                    class="explore-arrow-img"
+                    src="./src/images/arrow.png"
+                    alt="arrow"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="all-series-card">
+            <a href="#">
+              <img class="img-fit" src="./src/images/718.jpg" alt="718" />
+              <video muted loop class="hover-video">
+                <source src="./src/video/718.mp4" type="video/mp4" />
+              </video>
+
+              <p class="all-series-model-name fw-600">718</p>
+              <div class="all-series-model-info">
+                <div>
+                  <p class="model-tag">
+                    <span class="tag-text">Gasoline</span>
+                  </p>
+                  <p class="model">中置引擎雙人座跑車</p>
+                </div>
+                <div class="explore-wrapper">
+                  <span class="explore-text">探索</span
+                  ><img
+                    class="explore-arrow-img"
+                    src="./src/images/arrow.png"
+                    alt="arrow"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="all-series-card">
+            <a href="#">
+              <img class="img-fit" src="./src/images/taycan.jpg" alt="Taycan" />
+              <video muted loop class="hover-video">
+                <source src="./src/video/Taycan.mp4" type="video/mp4" />
+              </video>
+
+              <p class="all-series-model-name fw-600">Taycan</p>
+              <div class="all-series-model-info">
+                <div>
+                  <p class="model-tag"><span class="tag-text">Electro</span></p>
+                  <p class="model">四門五人座電動跑車</p>
+                </div>
+                <div class="explore-wrapper">
+                  <span class="explore-text">探索</span
+                  ><img
+                    class="explore-arrow-img"
+                    src="./src/images/arrow.png"
+                    alt="arrow"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="all-series-card">
+            <a href="#">
+              <img
+                class="img-fit"
+                src="./src/images/panamera.jpg"
+                alt="Panamera"
+              />
+              <video muted loop class="hover-video">
+                <source src="./src/video/Panamera.mp4" type="video/mp4" />
+              </video>
+
+              <p class="all-series-model-name fw-600">Panamera</p>
+              <div class="all-series-model-info">
+                <div>
+                  <p class="model-tag">
+                    <span class="tag-text">Hybrid</span
+                    ><span class="tag-text">Gasoline</span>
+                  </p>
+                  <p class="model">四門四人座豪華轎車</p>
+                </div>
+
+                <div class="explore-wrapper">
+                  <span class="explore-text">探索</span
+                  ><img
+                    class="explore-arrow-img"
+                    src="./src/images/arrow.png"
+                    alt="arrow"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="all-series-card">
+            <a href="#">
+              <img class="img-fit" src="./src/images/macan.jpg" alt="Macan" />
+              <video muted loop class="hover-video">
+                <source src="./src/video/Macan.mp4" type="video/mp4" />
+              </video>
+
+              <p class="all-series-model-name fw-600">Macan</p>
+              <div class="all-series-model-info">
+                <div>
+                  <p class="model-tag">
+                    <span class="tag-text">Electro</span
+                    ><span class="tag-text">Gasoline</span>
+                  </p>
+
+                  <p class="model">膽大贏前的純種跑格SUV</p>
+                </div>
+                <div class="explore-wrapper">
+                  <span class="explore-text">探索</span
+                  ><img
+                    class="explore-arrow-img"
+                    src="./src/images/arrow.png"
+                    alt="arrow"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="all-series-card">
+            <a href="#">
+              <img
+                class="img-fit"
+                src="./src/images/cayenne.jpg"
+                alt="Cayenne"
+              />
+              <video muted loop class="hover-video">
+                <source src="./src/video/Cayenne.mp4" type="video/mp4" />
+              </video>
+              <p class="all-series-model-name fw-600">Cayenne</p>
+              <div class="all-series-model-info">
+                <div>
+                  <p class="model-tag">
+                    <span class="tag-text">Hybrid</span
+                    ><span class="tag-text">Gasoline</span>
+                  </p>
+
+                  <p class="model">最具跑格的多功能SUV</p>
+                </div>
+                <div class="explore-wrapper">
+                  <span class="explore-text">探索</span
+                  ><img
+                    class="explore-arrow-img"
+                    src="./src/images/arrow.png"
+                    alt="arrow"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="all-series-nav">
+          <div class="indicator-wrapper">
+            <button class="all-series-nav-indicator"></button
+            ><button class="all-series-nav-indicator"></button
+            ><button class="all-series-nav-indicator"></button
+            ><button class="all-series-nav-indicator"></button
+            ><button class="all-series-nav-indicator"></button
+            ><button class="all-series-nav-indicator"></button>
+          </div>
+          <button class="all-series-control-button">
+            <img
+              class="video-control control-pause"
+              src="./src/images/pause.png"
+              alt="pause"
+            />
+            <img
+              class="video-control control-play"
+              src="./src/images/play.png"
+              alt="play"
+            />
+          </button>
+        </div>
+      </section>
+      <section class="dealer-section">
+        <div class="dealer-wrapper">
+          <h2>搜尋保時捷新車和中古車</h2>
+          <p>
+            讓您更輕鬆找到您的夢想保時捷。輸入您的所在地點，開始尋找您心中的夢想車款吧!
+          </p>
+
+          <form>
+            <label for="query">輸入地點並開始搜尋</label>
+            <div class="input-wrapper">
+              <img src="./src/images/loupe_flip.png" alt="loupe" />
+              <input
+                type="text"
+                name="query"
+                id="query"
+                placeholder="輸入城市名稱或郵遞區號"
+              />
+            </div>
+          </form>
+        </div>
+        <img
+          class="dealer-background-img"
+          src="./src/images/dealer.webp"
+          alt="dealer"
+        />
+      </section>
+      <section class="discover-section">
+        <h2>Discover</h2>
+        <div class="news-wrapper">
+          <div class="card news-card">
+            <a href="#">
+              <img
+                class="scale-img"
+                src="./src/images/e-performance.webp"
+                alt="保時捷 E-Peformance" />
+              <div class="news-content content-info fw-600">
+                <span class="card-model-name">保時捷 E-Peformance</span>
+
+                <img
+                  class="arrow-img"
+                  src="./src/images/arrow.png"
+                  alt="arrow"
+                /></div
+            ></a>
+          </div>
+          <div class="card news-card">
+            <a href="#"
+              ><img
+                class="scale-img"
+                src="./src/images/turbo-50-anniversary.webp"
+                alt="保時捷 Turbo 50 周年" />
+              <div class="news-content content-info fw-600">
+                <span class="card-model-name">保時捷 Turbo 50 周年</span>
+
+                <img
+                  class="arrow-img"
+                  src="./src/images/arrow.png"
+                  alt="arrow"
+                /></div
+            ></a>
+          </div>
+          <div class="card news-card">
+            <a href="#">
+              <img
+                class="scale-img"
+                src="./src/images/showroom.webp"
+                alt="保時捷展示中心" />
+              <div class="news-content content-info fw-600">
+                <span class="card-model-name">保時捷展示中心</span>
+
+                <img
+                  class="arrow-img"
+                  src="./src/images/arrow.png"
+                  alt="arrow"
+                /></div
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="about-brand">
+        <h4>關於保時捷</h4>
+        <div class="about-brand-items">
+          <a href="#">台灣保時捷</a>
+          <a href="#">招賢納士</a>
+          <a href="#">Global Partnership Council</a>
+          <a href="#">公司和服務</a>
+          <a href="#">永續發展</a>
+          <a href="#">新聞中心</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2025 作品集展示使用
+          <span class="copyright-span"><a href="#">使用條款</a></span
+          >|<span class="copyright-span"><a href="#">隱私政策</a></span
+          >|<span class="copyright-span"><a href="#">Cookies</a></span
+          >|<span class="copyright-span"><a href="#">商標與智慧財產權</a></span
+          >|<span class="copyright-span"><a href="#">UGC使用條款</a></span
+          >|<span class="copyright-span"><a href="#">吹哨者系統</a></span
+          >|<span class="copyright-span"><a href="#">English</a></span
+          >|<span class="copyright-span"
+            ><a href="#">Open Source Software Notice</a></span
+          >
+        </p>
+        <p class="terms">
+          為維護民眾居住生活品質及環境安寧，請配備有「運動/競技模式」等車輛(含跑車、大型重型機車)之車主，勿於市區及住宅區使用或行使急加速、拉轉速行為，而高輸出功率會製造噪音之車輛，亦請車主盡量避免於市區夜間21時至上午7時間行駛。
+        </p>
+        <p class="terms">
+          行政院環境保護署、內政部警政署及公路監理機關將針對車主擾寧之行為及製造噪音之車輛加強取締，以維護民眾生活安寧。
+        </p>
+        <p class="footer-logo">PORSCHE</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/js/expandMenu.js"></script>
+    <script type="module" src="./src/js/menuTab.js"></script>
+    <script type="module" src="./src/js/carouselCard.js"></script>
+    <script type="module" src="./src/js/sectionScroll.js"></script>
+    <script type="module" src="./src/js/formSubmit.js"></script>
+    <script type="module" src="./src/js/videoControl.js"></script>
+  </body>
+</html>
