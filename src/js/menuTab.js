@@ -48,9 +48,12 @@ const linkTitle = [
   "尋找經銷商",
   "登入",
 ];
+
 const spanContext = document.querySelector(".content-wrapper-title");
 
 const isLargeScreen = () => window.matchMedia("(min-width: 62.5em)").matches;
+
+const CALCULATION_DELAY_MS = 100;
 
 // 控制要展示哪個項目的內容
 export const activateContent = (index) => {
@@ -60,6 +63,8 @@ export const activateContent = (index) => {
     linkContent.forEach((content) => {
       content.classList.remove("active");
     });
+
+    checkAndSetScroll(linkContent[0], contentWrapper);
 
     if (!isLargeScreen()) {
       contentWrapper.classList.remove("active");
@@ -88,12 +93,32 @@ export const activateContent = (index) => {
     content.classList.remove("active");
   });
 
+  contentWrapper.classList.remove("needs-scroll");
+
   // 依據接收到的索引值，套用至對應的內容
   if (index !== undefined && index >= 0 && linkContent[index]) {
     linkContent[index].classList.add("active");
     spanContext.textContent = linkTitle[index];
+
+    checkAndSetScroll(linkContent[index], contentWrapper);
   }
 };
+
+// 根據對應content的內容高度判斷是否需增加滾動軸
+function checkAndSetScroll(contentElement, targetWrapper) {
+  targetWrapper.classList.remove("needs-scroll");
+
+  setTimeout(() => {
+    const contentScrollHeight = contentElement.scrollHeight;
+    const availableHeight = window.innerHeight;
+
+    if (contentScrollHeight > availableHeight) {
+      targetWrapper.classList.add("needs-scroll");
+    } else {
+      targetWrapper.classList.remove("needs-scroll");
+    }
+  }, CALCULATION_DELAY_MS);
+}
 
 // 小螢幕時出現的上一頁按鈕功能
 const backButton = document.querySelector(".back-button");
@@ -106,9 +131,6 @@ backButton.addEventListener("click", (event) => {
     contentWrapper.classList.remove("active");
   }
 });
-
-// 預設在頁面顯示linkContent陣列的第一個項目
-// activateContent(0);
 
 optionsWrapper.addEventListener("click", (event) => {
   // 根據被點擊的元素，找到最近的.sidemenu-option項目

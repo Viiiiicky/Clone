@@ -28,14 +28,19 @@ html {
   font-size: 62.5%;
   font-family: "Michroma", "Noto Sans TC", sans-serif;
   box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 
 body {
   max-width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
+
   color: var(--color-white);
   background-color: var(--color-white);
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 button {
@@ -431,7 +436,7 @@ nav {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 
   transform: translateY(1rem);
   transition: visibility 0.3s ease-in-out 0s, opacity 0.3s ease-in-out 0s,
@@ -509,6 +514,12 @@ nav {
   opacity: 1;
   transform: translateY(0) translateX(-50%);
   visibility: visible;
+}
+
+.sidemenu-content-wrapper.needs-scroll {
+  max-height: 100vh;
+
+  overflow-y: auto;
 }
 
 /* ============ 側邊選單 車型系列 ============ */
@@ -1029,6 +1040,7 @@ nav {
 .all-series {
   padding-block: 5rem 10rem;
   padding-inline: clamp(2rem, 5vw, 8rem);
+  overflow: hidden;
 }
 
 .all-series-title {
@@ -1036,6 +1048,18 @@ nav {
   font-size: clamp(3rem, 4vw, 6rem);
   margin-bottom: clamp(3rem, 4vw, 6rem);
 }
+
+/* @media screen and (max-width: 62.49em) {
+  .series-scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    width: 100vw;
+    max-width: 100%;
+
+    -webkit-overflow-scrolling: touch;
+  }
+} */
 
 .all-series-wrapper {
   display: flex;

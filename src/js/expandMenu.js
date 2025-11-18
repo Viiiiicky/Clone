@@ -14,7 +14,11 @@ const dropdownContent = document.querySelector(".dropdown-content");
 const dropdownLinks = document.querySelectorAll(".dropdown-content button");
 const hiddenInput = document.querySelector("#distance-value");
 const dropdownText = document.querySelector(".dropdown-text");
+
 let isVisible = false;
+
+const body = document.body;
+const NO_SCROLL_CLASS = "no-scroll";
 
 // 控制左側選單開關
 export const toggleMenu = (shouldOpen) => {
@@ -23,6 +27,12 @@ export const toggleMenu = (shouldOpen) => {
 
   if (currentState !== targetState) {
     navExpand.setAttribute("data-visible", targetState ? "true" : "false");
+
+    if (targetState) {
+      body.classList.add(NO_SCROLL_CLASS);
+    } else {
+      body.classList.remove(NO_SCROLL_CLASS);
+    }
   }
 };
 
