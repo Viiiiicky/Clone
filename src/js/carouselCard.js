@@ -131,6 +131,9 @@ function controlVideo(index, action = "play") {
 
   // 判斷影片狀態
   if (action === "play") {
+    if (video) {
+      video.muted = true;
+    }
     // 播放影片並移除loop屬性以確保小螢幕不會重複播
     video.play();
     video.removeAttribute("loop");
